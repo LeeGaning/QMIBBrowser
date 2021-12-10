@@ -1,0 +1,13 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+modules=
+
+Name: snmp++
+Version: 3.4.8
+Description: SNMP C++ framework version 3
+Requires:
+Libs: -L${libdir} -lsnmp++
+Libs.private: -lws2_32 -lwsock32  
+Cflags: -I${includedir}
